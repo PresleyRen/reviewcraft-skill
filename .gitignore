@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.env
+.env.*
+.venv/
+# Keep actual projects, manuscripts and private review links outside this repository.
+workspaces/
+private/

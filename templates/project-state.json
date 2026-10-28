@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "title": "Replace with your review title",
+  "manuscript": {
+    "path": "manuscript.md",
+    "sha256": ""
+  },
+  "files": [],
+  "checks": {
+    "journal_policy": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "coverage": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "coding_reliability": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "synthesis": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "full_review": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "references": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "figures": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "bilingual": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "rendered_files": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    },
+    "declarations": {
+      "status": "not_checked",
+      "manuscript_sha256": null,
+      "evidence": [],
+      "reason": ""
+    }
+  },
+  "detection": {
+    "similarity": {
+      "required": false,
+      "status": "not_requested",
+      "reason": "No check requested yet; set required if the project or journal requires it.",
+      "tool": null,
+      "date": null,
+      "manuscript_sha256": null,
+      "report_path": null,
+      "score_percent": null,
+      "threshold_percent": null,
+      "settings": {}
+    },
+    "ai": {
+      "required": false,
+      "status": "not_requested",
+      "reason": "No check requested yet; set required if the project or journal requires it.",
+      "tool": null,
+      "date": null,
+      "manuscript_sha256": null,
+      "report_path": null,
+      "score_percent": null,
+      "threshold_percent": null,
+      "settings": {}
+    }
+  },
+  "submission": {
+    "status": "not_submitted",
+    "receipt_path": null,
+    "manuscript_sha256": null
+  }
+}

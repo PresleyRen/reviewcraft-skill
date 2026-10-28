@@ -1,0 +1,4 @@
+interface:
+  display_name: "ReviewCraft · 综述工坊"
+  short_description: "Evidence-first review writing, audit and submission workflow"
+  default_prompt: "Use $reviewcraft to resume this literature review from its actual records, identify the next evidence-changing step, and complete the authorized work."

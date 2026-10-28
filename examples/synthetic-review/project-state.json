@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "title": "Synthetic workflow demonstration",
+  "manuscript": {
+    "path": "manuscript.md",
+    "sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa"
+  },
+  "files": [
+    {
+      "path": "manuscript.md",
+      "sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "role": "synthetic_fixture"
+    },
+    {
+      "path": "audit.md",
+      "sha256": "abe8c1bf99b478605be645f16918f1395056abfd6ebfea73c7b93b600677f862",
+      "role": "synthetic_fixture"
+    }
+  ],
+  "checks": {
+    "journal_policy": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "coverage": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "coding_reliability": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "synthesis": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "full_review": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "references": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "figures": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "bilingual": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "rendered_files": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    },
+    "declarations": {
+      "status": "passed",
+      "manuscript_sha256": "34496809cc006d3fa391dd12d239323588430c70df4189f3a5da6b224398c3fa",
+      "evidence": [
+        "audit.md"
+      ],
+      "reason": "Synthetic fixture for software tests, not a completed scientific check."
+    }
+  },
+  "detection": {
+    "similarity": {
+      "required": false,
+      "status": "not_requested",
+      "reason": "No check requested yet; set required if the project or journal requires it.",
+      "tool": null,
+      "date": null,
+      "manuscript_sha256": null,
+      "report_path": null,
+      "score_percent": null,
+      "threshold_percent": null,
+      "settings": {}
+    },
+    "ai": {
+      "required": false,
+      "status": "not_requested",
+      "reason": "No check requested yet; set required if the project or journal requires it.",
+      "tool": null,
+      "date": null,
+      "manuscript_sha256": null,
+      "report_path": null,
+      "score_percent": null,
+      "threshold_percent": null,
+      "settings": {}
+    }
+  },
+  "submission": {
+    "status": "not_submitted",
+    "receipt_path": null,
+    "manuscript_sha256": null
+  }
+}
