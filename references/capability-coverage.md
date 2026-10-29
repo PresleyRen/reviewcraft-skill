@@ -6,6 +6,8 @@
 |---|---|---|
 | Agent领域具体问题、工程价值、最近邻和增量 | review-design | 方法；提案能说明新增认识 |
 | 不因有人做过就否定，先理解局限 | review-design/search-and-evidence | 方法；具体条件逐项对比 |
+| 期刊规定、报告指南、实施方法和博主经验分层 | method-authority、sources、worksheet | 方法；来源、日期、读取范围及适用对象，PRISMA不作实施质量证明 |
+| 真实筛选者、独立性和AI参与 | method-authority、search-and-evidence | 方法；实际过程可追溯，不虚构独立人工 |
 | 综述类型和目标期刊一起选 | review-design | 方法；类型/范围/同刊参考有记录 |
 | 免费优先、低费备选、东南亚/新刊也核实 | review-design、worksheet | 方法；按费用/范围/索引事实评估，不按地区猜易录用 |
 | 区分投稿/审稿/APC/可选OA与周期 | review-design、worksheet | 方法；来源、币种、日期、未知明确 |
@@ -14,7 +16,11 @@
 | 数据和结论一一对照 | search-and-evidence、structure-and-synthesis | 方法；主张有原文位置 |
 | 最后新增文献会不会改变结论 | search-and-evidence、lessons | 方法；批次综合对照 |
 | 每章、每节、每段逻辑图 | structure-and-synthesis、worksheet | 方法；段落功能与证据/承接 |
-| 学目标期刊真实综述的逻辑与术语 | review-design、writing-and-bilingual | 方法；学功能不抄表述 |
+| 学同领域、同类型和跨期刊综述的逻辑与表达 | writing-and-bilingual、worksheet | 方法；来源位置→功能/句法/术语→采用原则，不抄句或移植事实 |
+| 起草时同步管语法、术语、逻辑与自我防御 | writing-and-bilingual、structure-and-synthesis | 方法；逐段局部检查、逐节衔接，准确术语和必要限定保留 |
+| 完稿后再严格审查并修复遗漏 | review-and-submission、worksheet | 方法；全文及派生件联查，已改与复核关闭分开，绑定最终版本 |
+| 真实成稿测试与假阳性校准 | review-and-submission、writing-and-bilingual | 方法；精确位置/摘录、分级、待核语义、保留反例及真实覆盖；无缺陷配额 |
+| 表格简写保留端点条件和行单位 | structure-and-synthesis | 方法；对象/触发点/排除/分母与正文一致，来源指标及定位明确 |
 | 润色、去模板感、去无信息防御句 | writing-and-bilingual | 方法；语义保留，不按禁词表 |
 | 英文主稿与对应中文翻译 | writing-and-bilingual | 方法；否定/条件/数字/范围同步 |
 | 图号、文字、数据、正文引图一致 | figures-and-artifacts | 方法；真实源数据与图对应 |
@@ -38,3 +44,17 @@
 | 不无限验证、调到赢或堆文档 | review-design、lessons | 方法；预算/停止/重开条件 |
 
 本轮没有把任何任务要求解释成必须购买服务、必须双人标注、必须调用多个Agent、必须模拟实验或必须公开论文。
+
+## 本次能力整合增量
+
+| 具体请求 | 实施位置 | 可观察产物 |
+|---|---|---|
+| 先研究综述方法/整合skills，领域写作停住 | SKILL、skill-adapters | 来源/许可/采用与舍弃矩阵，交付后不自动推进领域 |
+| 从笔记走到新综合 | conduct-and-synthesis、structure-and-synthesis | 概念定义/单位、条件冲突、推导与边界 |
+| 匹配单人资源和具体方法承诺 | method-authority、conduct-and-synthesis | 实施版本/团队要求/实际执行或偏离 |
+| 排查检索策略和覆盖盲点 | search-and-evidence、conduct-and-synthesis | 平台语法、概念块、已知关键论文调试，真实搜索记录 |
+| 核当前期刊政策差异 | journal-policy-profiles、review-and-submission | 用途/规则/位置/日期/未知卡，选刊时刷新 |
+| 索引失败、版本差异与论断核验 | search-and-evidence | 身份/版本/支持状态分开，partial保留 |
+| 跨文献图表和语义依赖 | figures-and-artifacts、writing-and-bilingual | 来源/节点边、数值角色、限定关系和联动检查 |
+
+公开skill与本机能力只是来源和可选协作，不是安装清单、执行承诺或质量认证。

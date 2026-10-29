@@ -1,6 +1,6 @@
 ---
 name: reviewcraft
-description: "Plan and execute evidence-grounded literature reviews, systematic maps and survey manuscripts through journal selection, source reading, synthesis, English writing, Chinese translation, paragraph-level editing, figures, reviewer-style audit and submission preparation. Use for 写综述、综述方法、逐段逻辑图、中英文稿同步、综述投稿检查; resume the current stage rather than restarting research."
+description: "Plan and execute evidence-grounded literature reviews, systematic maps and survey manuscripts through journal selection, source reading, synthesis, English writing, Chinese translation, paragraph-level editing, figures, reviewer-style audit and submission preparation. Use for 写综述、综述方法与能力整合、逐段逻辑图、中英文稿同步、综述投稿检查; resume the current stage rather than restarting research."
 license: MIT
 ---
 
@@ -14,14 +14,17 @@ Read the project's local rules, current status, current-file manifest and the re
 
 Keep one current manuscript, derived translations/exports, a small decision ledger and a file manifest. Respect separately owned experiment and review tasks. Do not impose this repository's template when the project already has equivalent records.
 
+If the user requests methods research or skill consolidation first, complete that deliverable and preserve any pause on domain search, pilot extraction or manuscript writing. Do not automatically advance to the next research stage. Integrate useful capabilities by stage, rather than loading or installing every candidate skill.
+
 ## Route to the needed stage
 
 | Stage | Read | Produce |
 |---|---|---|
-| Choose scope and review type; compare venues | [Review design](references/review-design.md) | A bounded question, nearest-review difference and verified venue fit |
+| Study review methods or consolidate skills | [Skill adapters](references/skill-adapters.md), [Conduct and synthesis](references/conduct-and-synthesis.md) | An audited capability map, source/permission decisions and tested skill changes |
+| Choose scope and review type; compare venues | [Method authority](references/method-authority.md), [Review design](references/review-design.md), then relevant parts of [Conduct and synthesis](references/conduct-and-synthesis.md) | A bounded question, nearest-review difference and verified venue fit |
 | Search, read, select and code | [Search and evidence](references/search-and-evidence.md) | Executed query log, dispositions, report-family links and source-located evidence |
 | Build the argument, sections and paragraphs | [Structure and synthesis](references/structure-and-synthesis.md) | Question-to-conclusion map, section/paragraph logic and cross-study synthesis |
-| Edit English or synchronize Chinese | [Writing and bilingual work](references/writing-and-bilingual.md) | Meaning-preserving prose and synchronized translations |
+| Learn field expression, draft/edit English or synchronize Chinese | [Writing and bilingual work](references/writing-and-bilingual.md) | Source-located expression principles, checked paragraphs and synchronized translations |
 | Prepare figures, references and files | [Figures and artifacts](references/figures-and-artifacts.md) | Numbered editable figures, checked citations and rendered outputs |
 | Review, prepare uploads or handle revisions | [Review and submission](references/review-and-submission.md) | Located issues, actual check outcomes, journal package and appropriate status |
 | Diagnose a stalled or repeated failure | [Lessons](references/lessons.md) | Root cause, narrow correction, counterexample and stopping decision |
@@ -30,11 +33,14 @@ Use [the worksheet](templates/review-worksheet.md) for a new project; [capabilit
 
 ## Work with evidence, not a desired verdict
 
+- Classify journal requirements, reporting guidelines, conduct methods and practice advice before applying them. PRISMA describes reporting; it does not establish review conduct quality. Match the review type and journal rather than assuming a universal SCI format.
+- Report actual screeners, independence, automation and checks; model agreement or role simulation is not independent human screening.
 - Every important synthesis must have a source version, reading depth, locator, scope and uncertainty. Identity verification is separate from claim support. An abstract is not a full-method reading.
 - Distinguish records, reports, report families, datasets and independent experiments. Unretrieved, unread and unresolved are different outcomes. Keep them in the denominator appropriate to the stated count.
 - Seek both supporting and contradicting sources. New taxonomy names or more paper counts do not by themselves establish a contribution. State the decision or understanding enabled by the synthesis.
 - When searching stops under a budget, say so. Inspect whether later additions alter central categories or recommendations before claiming stable coverage. Do not turn a bounded map into an exhaustive survey by changing its title.
 - Review the central case before editing style. Keep real limitations, counterevidence, required declarations and accurate AI-use information; remove empty defensive language and internal production chatter from the manuscript.
+- Learn terminology and argument moves from relevant reviews across journals. Check grammar, terminology, claim strength and paragraph logic while drafting; then perform a separate whole-manuscript review. Observed phrasing is a reference, not a journal rule or a sentence template.
 - Use actual completed author contributions and approvals. A proposed task is not a completed CRediT role. A private repository draft is not a public deposit.
 
 ## Check before release

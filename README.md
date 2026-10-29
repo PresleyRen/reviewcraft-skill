@@ -2,7 +2,7 @@
 
 把“找文献、整理材料、写成文章”连接成一条能检查、能复用的综述工作流。
 
-ReviewCraft提供一个可安装的Agent Skill，配套方法手册、逐段写作模板、审查与投稿检查，以及一个不联网的文件/状态检查器。它从实际综述任务中提炼经验，适合Agent、LLM、软件工程等领域；换领域时调整问题和证据标准。
+ReviewCraft提供一个可安装的Agent Skill，配套方法手册、逐段写作模板、审查与投稿检查，以及一个不联网的文件/状态检查器。它支持先研究综述方法与能力，再按用户选择进入具体领域。方法入口区分期刊规定、报告指南、研究实施和教授/博主经验，帮助为具体综述选择适用要求。它从实际综述任务中提炼经验，适合Agent、LLM、软件工程等领域；换领域时调整问题和证据标准。
 
 ## 能帮你完成什么
 
@@ -13,10 +13,10 @@ ReviewCraft提供一个可安装的Agent Skill，配套方法手册、逐段写�
 | 从原文建立证据 | 检索、筛选、报告族、读取深度、定位与未知项 |
 | 把材料变成综合 | 横向比较、冲突解释、适用边界、可追溯的工程建议 |
 | 规划全文和每一段 | 主线图、章节过渡、段落功能、证据和下一段关系 |
-| 改学术表达 | 保留术语和结论强度，处理机械连接词、空泛总结、重复与无信息的防御句 |
+| 学习并运用学术表达 | 从同领域、同类型的跨刊综述建立表达依据与术语表，起草时逐段检查语法、搭配、逻辑和无信息防御 |
 | 同步中英文 | 英文为正式主稿时，中文忠实跟随；检查否定、条件、数字和范围 |
 | 准备图表与文件 | 可编辑SVG、图号/引文对应、Word/PDF实际渲染、附件和哈希清单 |
-| 审稿与投稿准备 | 内容总审先于上传；逐项问题、作者事实、政策、资料访问和最新文件核对 |
+| 完稿总审与投稿准备 | 写完再严格审一次全文，检查表格压缩是否丢条件、原生指标和实际行单位；分级记录问题、保留反例及语义待核项，再核对投稿材料 |
 | 记录检测状态 | 查重与AI检测分别记录；没有报告就没有百分比 |
 
 ## 从哪里开始
@@ -26,7 +26,7 @@ ReviewCraft提供一个可安装的Agent Skill，配套方法手册、逐段写�
   → 确定综述类型、范围、纳排和阅读预算
   → 执行检索 → 去重/报告族 → 筛选 → 原文提取
   → 跨文献综合 → 检查新增文献是否改变结论
-  → 全文逻辑图 → 章节/段落 → 英文主稿
+  → 参考综述表达依据/术语 → 全文逻辑图 → 边写边检查段落 → 英文主稿
   → 图表/引文 → 中文同步 → 实际渲染
   → 审稿人总审 → 修改 → 复核
   → 检测状态与期刊要求核对
@@ -69,6 +69,16 @@ python3 scripts/check_review.py --root examples/synthetic-review --state project
 
 最后一个命令检查仓库自带的**合成示例**，预期成功；它不包含真实论文、检测报告或真实投稿。检查器会阻止缺文件、哈希不符、旧稿审查、没有证据的“通过”、缺报告的检测分数、超出配置阈值的报告和越界路径。
 
+技能格式校验使用Skill Creator提供的`quick_validate.py`，它需要PyYAML。开发依赖锁定在[requirements-dev.txt](requirements-dev.txt)，可安装到仓库自己的环境；本地文件/状态检查器仍只用Python标准库：
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python /path/to/skill-creator/scripts/quick_validate.py .
+```
+
+最后一行替换为自己已安装的Skill Creator校验脚本路径。格式校验通过确认技能入口结构有效；真实稿件的语法、术语和逻辑仍须按写作与审查模块实际阅读。
+
 检测服务没有统一的强制阈值。项目有要求才设置`required`和`threshold_percent`；未要求的检测可以明确记为未请求，不虚构一次检测。脚本不生成检测分数，也不把低AI分数解释成真实作者身份或学术质量。
 
 ## 方法、代码与人工判断怎么分工
@@ -89,7 +99,7 @@ python3 scripts/check_review.py --root examples/synthetic-review --state project
 5. 先说新增综合带来什么判断，再写分类名和目录。
 6. 只保留一个当前主稿，修改同步到实际受影响的中文、图注、附件和导出；提交源按回执冻结。
 
-完整方法：[能力覆盖](references/capability-coverage.md) · [设计](references/review-design.md) · [检索证据](references/search-and-evidence.md) · [写作结构](references/structure-and-synthesis.md) · [表达与双语](references/writing-and-bilingual.md) · [图表文件](references/figures-and-artifacts.md) · [审查投稿](references/review-and-submission.md) · [经验](references/lessons.md) · [来源](references/sources.md)。
+完整方法：[实施与综合](references/conduct-and-synthesis.md) · [相关skills整合](references/skill-adapters.md) · [期刊政策差异](references/journal-policy-profiles.md) · [方法与规范层级](references/method-authority.md) · [能力覆盖](references/capability-coverage.md) · [设计](references/review-design.md) · [检索证据](references/search-and-evidence.md) · [写作结构](references/structure-and-synthesis.md) · [表达与双语](references/writing-and-bilingual.md) · [图表文件](references/figures-and-artifacts.md) · [审查投稿](references/review-and-submission.md) · [经验](references/lessons.md) · [来源](references/sources.md)。
 
 ## 公开范围与许可
 
