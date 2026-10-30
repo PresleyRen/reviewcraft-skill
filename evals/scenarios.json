@@ -186,6 +186,60 @@
         "Preserves undefined-denominator condition and does not invent empty self-defence",
         "Does not guess whether partial result means partial credit, items or data; asks for the native endpoint/locator"
       ]
+    },
+    {
+      "id": "defence-surface-variants",
+      "synthetic": true,
+      "request": "按ReviewCraft给下列英文段落做可用的最小修订，保留已有事实并简述原因。属于合成写作材料。",
+      "materials": [
+        "The map groups tests by the object they score. Nevertheless, this should not be interpreted as a solution to every possible engineering problem.",
+        "The report lists the observed failures and their triggering conditions. Some might object that a report cannot answer every future question. We must acknowledge this concern.",
+        "The index links each category to its source. This is valuable, but it remains far from a complete solution to all aspects of deployment.",
+        "Six studies reported lower latency under budget B. This may possibly suggest that lower latency might potentially occur under budget B. We merely offer a very limited preliminary attempt."
+      ],
+      "inspect": [
+        "Recognizes function across concession, imagined objection, praise/retraction and hedging variants",
+        "Removes unclaimed stronger counterpropositions without inventing new benefit",
+        "Keeps six studies, latency and budget B roles; does not lower supported observations into vague possibility"
+      ]
+    },
+    {
+      "id": "material-negation-and-claim-repair",
+      "synthetic": true,
+      "request": "按ReviewCraft修订下列合成材料；每项事实包限定了可支持的主张。",
+      "materials": [
+        {
+          "facts": "This is an analytical example, not observed measurements. Two indicators swap pass/fail states while their total stays one.",
+          "draft": "This analytical example illustrates the aggregate score. It does not establish that the scorer is wrong."
+        },
+        {
+          "facts": "Accuracy improved only on dataset D; dataset E showed a decline.",
+          "draft": "The method improves accuracy in every domain. However, the evidence comes only from D and E, and E showed a decline."
+        },
+        {
+          "facts": "The ratio is undefined if the denominator is zero.",
+          "draft": "The ratio is undefined when the denominator is zero."
+        },
+        {
+          "facts": "Paragraph 1 introduces conflicting results. Paragraph 2 explains that one setting uses a stricter cost cap and develops that difference.",
+          "draft": "The studies report conflicting outcomes. However, one setting uses a stricter cost cap. The next paragraph examines how that cap changes the comparison."
+        }
+      ],
+      "inspect": [
+        "Can replace an unnecessary scorer-error coda with direct analytical framing without implying measured data",
+        "Corrects actual universal overclaim rather than deleting its counterevidence",
+        "Preserves zero-denominator negation and an evidenced contrast that is developed"
+      ]
+    },
+    {
+      "id": "draft-without-ritual-counterstatement",
+      "synthetic": true,
+      "request": "请用这些合成要点写一个英文综述段落，不需要审查说明混进正文：三个研究使用同一数据和预算，均报告方法A比B少两次工具调用；其他资源指标未测。下一段讨论如何测内存。",
+      "inspect": [
+        "Drafts supported equal-condition comparison directly",
+        "Preserves exactly three studies, two calls, common data/budget and unmeasured resources",
+        "Provides purposeful memory transition without invented objections, praise/retraction or generic universal-success disclaimer"
+      ]
     }
   ]
 }

@@ -40,6 +40,7 @@ Use [the worksheet](templates/review-worksheet.md) for a new project; [capabilit
 - Seek both supporting and contradicting sources. New taxonomy names or more paper counts do not by themselves establish a contribution. State the decision or understanding enabled by the synthesis.
 - When searching stops under a budget, say so. Inspect whether later additions alter central categories or recommendations before claiming stable coverage. Do not turn a bounded map into an exhaustive survey by changing its title.
 - Review the central case before editing style. Keep real limitations, counterevidence, required declarations and accurate AI-use information; remove empty defensive language and internal production chatter from the manuscript.
+- Apply the [argument-function test](references/writing-and-bilingual.md#以论证功能清除叠加防御) while drafting and reviewing. End a supported explanation naturally; do not append imagined objections, stronger claims the text never made, ritual praise-then-retraction or repeated disclaimers. Internal critique calibrates the final argument; it is not manuscript narration.
 - Learn terminology and argument moves from relevant reviews across journals. Check grammar, terminology, claim strength and paragraph logic while drafting; then perform a separate whole-manuscript review. Observed phrasing is a reference, not a journal rule or a sentence template.
 - Use actual completed author contributions and approvals. A proposed task is not a completed CRediT role. A private repository draft is not a public deposit.
 
