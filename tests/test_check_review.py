@@ -5,6 +5,8 @@ import re
 import tempfile
 import unittest
 
+import yaml
+
 REPO = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('check_review', REPO / 'scripts/check_review.py')
 checker = importlib.util.module_from_spec(spec)
@@ -97,6 +99,55 @@ class ReviewGateTests(unittest.TestCase):
 
 
 class PackageTests(unittest.TestCase):
+    def test_skill_and_ui_metadata_are_valid(self):
+        content = (REPO / 'SKILL.md').read_text(encoding='utf-8')
+        match = re.match(r'^---\n(.*?)\n---(?:\n|$)', content, re.DOTALL)
+        self.assertIsNotNone(match, 'SKILL.md requires YAML frontmatter')
+        metadata = yaml.safe_load(match.group(1))
+        self.assertIsInstance(metadata, dict)
+        self.assertFalse(set(metadata) - {'name', 'description', 'license', 'allowed-tools', 'metadata'})
+        for field in ('name', 'description'):
+            self.assertIsInstance(metadata.get(field), str, field)
+            self.assertTrue(metadata[field].strip(), field)
+        name = metadata['name'].strip()
+        self.assertRegex(name, r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+        self.assertLessEqual(len(name), 64)
+        self.assertLessEqual(len(metadata['description'].strip()), 1024)
+        self.assertNotRegex(metadata['description'], r'[<>]')
+
+        ui = yaml.safe_load((REPO / 'agents/openai.yaml').read_text(encoding='utf-8'))
+        self.assertIsInstance(ui, dict)
+        interface = ui.get('interface')
+        self.assertIsInstance(interface, dict)
+        for field in ('display_name', 'short_description', 'default_prompt'):
+            self.assertIsInstance(interface.get(field), str, field)
+            self.assertTrue(interface[field].strip(), field)
+        self.assertRegex(interface['default_prompt'], rf'\${re.escape(name)}(?![\w-])')
+
+    def test_behavior_scenario_catalog_is_valid(self):
+        catalog = json.loads((REPO / 'evals/scenarios.json').read_text(encoding='utf-8'))
+        self.assertIsInstance(catalog, dict)
+        self.assertIs(type(catalog.get('schema_version')), int)
+        self.assertEqual(catalog['schema_version'], 1)
+        self.assertIs(catalog.get('automatic_score'), False)
+        cases = catalog.get('cases')
+        self.assertIsInstance(cases, list)
+        self.assertTrue(cases)
+        ids = set()
+        for case in cases:
+            self.assertIsInstance(case, dict)
+            with self.subTest(case=case.get('id')):
+                for field in ('id', 'request'):
+                    self.assertIsInstance(case.get(field), str, field)
+                    self.assertTrue(case[field].strip(), field)
+                self.assertNotIn(case['id'], ids, 'Scenario IDs must be unique')
+                ids.add(case['id'])
+                self.assertIsInstance(case.get('inspect'), list)
+                self.assertTrue(case['inspect'])
+                for item in case['inspect']:
+                    self.assertIsInstance(item, str)
+                    self.assertTrue(item.strip())
+
     def test_internal_markdown_links_resolve(self):
         for file in REPO.rglob('*.md'):
             if any(part.startswith('.') for part in file.relative_to(REPO).parts):

@@ -38,7 +38,7 @@ ReviewCraft提供一个可安装的Agent Skill，配套方法手册、逐段写�
 
 ## 安装与使用
 
-要求：能读取Markdown技能的Agent；本地检查器与测试使用Python 3.10+标准库，不需要GPU、API密钥或付费检测账户。
+要求：能读取Markdown技能的Agent；本地文件/状态检查器使用Python 3.10+标准库。开发测试另需requirements-dev.txt中锁定的PyYAML，不需要GPU、API密钥或付费检测账户。
 
 在Codex中安装（目标目录不存在时执行）：
 
@@ -64,21 +64,23 @@ git clone https://github.com/PresleyRen/reviewcraft-skill.git "$HOME/.codex/skil
 
 ```sh
 python3 scripts/check_review.py --root /path/to/my-review --state project-state.json
-python3 -m unittest discover -s tests -v
 python3 scripts/check_review.py --root examples/synthetic-review --state project-state.json
 ```
 
 最后一个命令检查仓库自带的**合成示例**，预期成功；它不包含真实论文、检测报告或真实投稿。检查器会阻止缺文件、哈希不符、旧稿审查、没有证据的“通过”、缺报告的检测分数、超出配置阈值的报告和越界路径。
 
-技能格式校验使用Skill Creator提供的`quick_validate.py`，它需要PyYAML。开发依赖锁定在[requirements-dev.txt](requirements-dev.txt)，可安装到仓库自己的环境；本地文件/状态检查器仍只用Python标准库：
+完整包测试会检查技能入口与界面YAML、行为场景JSON、内部文件链接和状态检查器。开发依赖锁定在[requirements-dev.txt](requirements-dev.txt)，安装到仓库自己的环境后执行：
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
-.venv/bin/python /path/to/skill-creator/scripts/quick_validate.py .
+.venv/bin/python -m pip check
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
-最后一行替换为自己已安装的Skill Creator校验脚本路径。格式校验通过确认技能入口结构有效；真实稿件的语法、术语和逻辑仍须按写作与审查模块实际阅读。
+GitHub Actions使用同一组测试，在Python 3.10和3.14上运行，并执行合成示例。场景目录测试检查结构与字段，不执行其中的模型写作请求。
+
+已安装Skill Creator时，还可用`.venv/bin/python /path/to/skill-creator/scripts/quick_validate.py .`检查技能入口，替换为自己的实际脚本路径。真实稿件的语法、术语和逻辑按写作与审查模块实际阅读。
 
 检测服务没有统一的强制阈值。项目有要求才设置`required`和`threshold_percent`；未要求的检测可以明确记为未请求，不虚构一次检测。脚本不生成检测分数，也不把低AI分数解释成真实作者身份或学术质量。
 
