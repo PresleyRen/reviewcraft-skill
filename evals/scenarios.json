@@ -240,6 +240,33 @@
         "Preserves exactly three studies, two calls, common data/budget and unmeasured resources",
         "Provides purposeful memory transition without invented objections, praise/retraction or generic universal-success disclaimer"
       ]
+    },
+    {
+      "id": "expression-action-and-evidence",
+      "request": "只按给定事实修订这句英文：The robust generalized execution-state-driven retry-readiness harmonization achieves highly reliable operations. 事实：包装层在重试写操作前读取订单状态；同一模拟设置下，基线30次中8次重复写，包装层30次中3次重复写。没有其他测量。",
+      "inspect": [
+        "写清主体、读取动作、对象和重试时机；用给定结果替代没有测量含义的形容词",
+        "不补造成本、显著性、普遍可靠性或新方法名",
+        "保留30次分母及8/3角色，原事实不能被流畅措辞改变"
+      ]
+    },
+    {
+      "id": "expression-preserve-defined-terms",
+      "request": "只修确有问题的英文，无问题可原样保留。定义：leave-one-out是估计方法，task-specific verifier按任务条件核验，normalized residual是变量名；state-dependent update的规则由状态选择。正文：We used a leave-one-out estimator and a task-specific verifier. The normalized residual was computed before the state-dependent update. 本稿新称retry ledger，定义为操作标识、时间戳与状态记录；新名词不附带创新性主张。",
+      "inspect": [
+        "保留已有含义明确的复合词与归一化/残差等操作修饰，不以连字符多判错",
+        "有定义的新名词可以使用，不要求零检索的词一律删除",
+        "不强制改被动语态、句长或为显示工作而重写"
+      ]
+    },
+    {
+      "id": "expression-context-and-unknowns",
+      "request": "只检查这句能否理解，不猜意思：This source-aligned retry gate improves operational resilience. 未提供上下文、gate定义、来源绑定方式、实验和引文。请给出具体待补点，不编造实验，不安排新增同学测试。",
+      "inspect": [
+        "区分术语含义未定、指代/对象缺失与效果证据缺失",
+        "不凭读不到就认定整个研究无效，不补造gate机制",
+        "复述自检不冒充人评；缺口留工作说明，不用虚构数字补足"
+      ]
     }
   ]
 }

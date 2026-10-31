@@ -47,6 +47,13 @@
 
 期刊/出版政策的本日读取范围和未知另见[journal-policy-profiles](journal-policy-profiles.md)；公开skill的commit、许可、已读入口及采用/舍弃见[skill-adapters](skill-adapters.md)。市场聚合页只用于发现，最终回到原仓库审读；未依赖评分/徽章证明方法或安全。
 
+## 2026-10-31表达自测建议
+
+| 来源/层级 | 实际读取 | 采用与边界 |
+|---|---|---|
+| [Claire涵姐：导师和审稿人怎么看出论文里的AI感？](https://www.douyin.com/video/7702015415697825654) / practice_advice | 用户提供原视频；2026-10-31浏览器读取说明和带时间的五项章节，抽看各段画面/烧录文字，未取得完整音频转录 | 自行改写为动作、复合修饰、修饰信息、术语溯源和上下文复述检查。保留稳定术语；不把表达特征当AI身份或期刊规定，不搬用视频例句 |
+| [Herbold等，Scientific Reports 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10616290/) / empirical_context | 定点核摘要、Introduction、Results/Table 3与Discussion相关段；视频开头展示该文 | 研究对象是学生议论文及当时ChatGPT版本；可支持特定语料存在语言差异，不能验证上述五项能识别科研论文作者身份，也不能支持复合词禁令 |
+
 ## 与已有个人技能的关系（原记录）
 
 - [ClearWeave](https://github.com/PresleyRen/clearweave-skill)：按含义编辑、处理模板化表达。写作流程补强时读取本地SKILL及academic-grammar、author-voice、anti-defensive三个参考模块，借鉴按功能学习表达、保护术语和限定的原则；未复制脚本或整套模块，不把样本习惯当规则。

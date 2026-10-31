@@ -18,6 +18,7 @@
 | 每章、每节、每段逻辑图 | structure-and-synthesis、worksheet | 方法；段落功能与证据/承接 |
 | 学同领域、同类型和跨期刊综述的逻辑与表达 | writing-and-bilingual、worksheet | 方法；来源位置→功能/句法/术语→采用原则，不抄句或移植事实 |
 | 起草时同步管语法、术语、逻辑与自我防御 | writing-and-bilingual、structure-and-synthesis | 方法；逐段局部检查、逐节衔接，准确术语和必要限定保留 |
+| 动作/复合修饰/术语/上下文五项表达自测 | writing-and-bilingual、review-and-submission、worksheet | 方法；指出隐藏操作或证据缺口，保留领域术语、必要修饰和有定义的新概念，不按连字符/删词配额或AI率验收 |
 | 清除不同句式的叠加防御与悬空转折 | writing-and-bilingual、structure-and-synthesis、review-and-submission | 方法；实际主张/新增信息/当前位置/承接判据，内部自检与正文分离，不按词表或全删否定 |
 | 完稿后再严格审查并修复遗漏 | review-and-submission、worksheet | 方法；全文及派生件联查，已改与复核关闭分开，绑定最终版本 |
 | 真实成稿测试与假阳性校准 | review-and-submission、writing-and-bilingual | 方法；精确位置/摘录、分级、待核语义、保留反例及真实覆盖；无缺陷配额 |
