@@ -63,3 +63,16 @@
 - [FigureFoundry](https://github.com/PresleyRen/figurefoundry-scientific-figures)：原生科研图与可编辑导出，可选协作。
 
 以上链接的仓库存在性由本轮已连接GitHub账户仓库列表确认；未据此声称完整审计了各仓库代码、最新版本或兼容性。这些项目有各自许可。ReviewCraft的规则、模板和检查器为本次原创整合，不是上述项目或出版社的官方产品。
+
+## 2026-11-02逐节指导与适用性
+
+| 原始来源 | 读取范围 | 采用 / 不泛化 |
+|---|---|---|
+| [Nature Reviews作者指南](https://www.nature.com/documents/Reviews-PS.pdf) | 官方PDF第1页摘要、引言、结尾，第2页图表原则；2026-11-02复核，文件版本日期未明 | 主题、背景与及时性、导读、结尾含义；篇幅/引用量/邀稿规则只对适用刊/类型成立 |
+| [UNC Writing Center](https://writingcenter.unc.edu/tips-and-tools/literature-reviews/) | 官方HTML定义、Find models、Find a focus、Convey it、Consider organization | 主题组织和全篇/局部结构；教学性的三部分不是强制目录，其不增加新贡献的简述不作独立综述禁止新综合的规定 |
+| [Pautasso 2013](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003149) | 原始Editorial Rules 5–9 | 聚焦、批判、逻辑图与反馈；不是当前所有综述的类型或格式规则 |
+| [Manchester Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/referring-to-sources/) / [conclusions](https://www.phrasebank.manchester.ac.uk/writing-conclusions/) | 原站Referring to sources引导/时态及归属分类、Conclusions功能与分组 | 按功能选时态、归属、收束；示例句中的first、significant、因果及限制需本稿证据，不整套复制句型 |
+| [PLOS Computational Biology Reviews](https://journals.plos.org/ploscompbiol/s/other-article-types) | 官方Other Article Types的Reviews段 | 文献支持的新视角及按内容分节；该刊学科、字数与图数不外推为计算机综述通则 |
+| [PLOS Computational Biology reviewer guidelines](https://journals.plos.org/ploscompbiol/s/reviewer-guidelines) | What to Assess、Writing the review | 借鉴主张支持、公平定位、方法可查、术语及清楚表达；该页明确主要针对原始研究，不把创新/生物学指标套给综述 |
+
+逐节操作见[structure-and-synthesis](structure-and-synthesis.md#用来源指导逐节修订)。上述来源是方法/表达参考，不自动进入用户论文的科学纳入语料或参考文献。
