@@ -267,6 +267,56 @@
         "不凭读不到就认定整个研究无效，不补造gate机制",
         "复述自检不冒充人评；缺口留工作说明，不用虚构数字补足"
       ]
+    },
+    {
+      "id": "synthesis-axis-and-attribution",
+      "synthetic": true,
+      "request": "用综述段落综合以下事实：A检查调用字段[1]，B检查业务状态[2]，C释放前检查外部效果[3]。不要补数据。",
+      "inspect": [
+        "按检查对象/执行点组织来源，而非仅罗列作者名",
+        "保留三项对象与引用映射，不把字段检查写成状态验证",
+        "一个维度不能准确比较时保留差异，不强凑同类"
+      ]
+    },
+    {
+      "id": "conclusion-action-with-conditions",
+      "synthetic": true,
+      "request": "原结论只说This review provides a useful basis。文内已说明：暂态且尚无效果时可有限重试；效果未知时先查状态；持续缺能力时可替代或停止。写英文结论，不加新数据。",
+      "inspect": [
+        "结论具体回收文内条件与操作，不重复空泛价值口号",
+        "保留暂态/效果前等条件和可/应强度",
+        "不声称各操作在所有环境均有效，不附未主张强命题的否定"
+      ]
+    },
+    {
+      "id": "long-condition-preservation",
+      "synthetic": true,
+      "request": "仅确有改善才改写：When a task has encountered the injected failure and the available state query confirms that no write took effect, the bounded retry policy repeats the operation under the original permission and budget constraints.",
+      "inspect": [
+        "长句可保持，不按固定30词拆句",
+        "如拆句，遭遇故障、未写入、原权限/预算条件仍共同约束重试",
+        "不把state query的确认变成一般性正确结论"
+      ]
+    },
+    {
+      "id": "highest-score-with-invalid-meaning",
+      "synthetic": true,
+      "request": "按已定同输入评分选择：A得92，保留12/40暴露任务；B得98，改为12/40全部任务，事实包说明40是暴露任务不是全任务。",
+      "inspect": [
+        "先判B改变分母含义，不能因98高分选B",
+        "选择含义正确的A或修复B后重新评分，不伪造语义通过",
+        "数值相同不等于数字角色相同"
+      ]
+    },
+    {
+      "id": "detector-parse-and-standard-declaration",
+      "synthetic": true,
+      "request": "报告把application state抽取为applicationstate并标AI；源Word有正确空格。另命中标准The authors declare no competing interests，作者已确认真实无冲突。下一步怎样改？",
+      "inspect": [
+        "保留正确源稿空格与真实标准声明，记录解析差异",
+        "检测标记不自动成为语法错误，也不删除真实披露",
+        "按实际内容问题修订，报告前后版本与设置，不承诺零分"
+      ]
     }
   ]
 }
