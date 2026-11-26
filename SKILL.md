@@ -31,6 +31,10 @@ If the user requests methods research or skill consolidation first, complete tha
 
 Use [the worksheet](templates/review-worksheet.md) for a new project; [capability coverage](references/capability-coverage.md) maps concrete requests to modules. Methodological and publisher links are in [sources](references/sources.md). Read only the relevant modules. Existing specialist skills can help with editing, figures, documents or review when installed; this skill has no mandatory model, paid service or third-party skill dependency.
 
+## Shared citation verification during writing and submission
+
+When adding or materially changing an external claim or citation, use the installed `paper-evidence-audit` companion's [citation verification protocol](https://github.com/PresleyRen/paper-review-writing-skill/blob/2d947ebbe6dfbdba77937e92d0fcad260efffe9d/.agents/skills/paper-evidence-audit/references/citation-verification.md) in admission mode if available; in the final review use its submission mode. ReviewCraft owns review inclusion, evidence synthesis and manuscript structure; the companion owns citation identity/metadata/status and claim-support checks. Reuse the existing evidence records rather than creating duplicate corpora. If no companion is installed, apply this skill's local evidence and submission modules plus the same minimum checks: actual authoritative record, applicable field and publication status, inspected relevant source locator, per-occurrence claim support and final inventory reconciliation. Do not add unsupported citations to finished prose or mark unresolved checks passed. Recheck only changed claims during local editing. Record whether the companion was actually invoked and any missing source/independence; never auto-install or transmit private manuscript material without permission.
+
 ## Work with evidence, not a desired verdict
 
 - Classify journal requirements, reporting guidelines, conduct methods and practice advice before applying them. PRISMA describes reporting; it does not establish review conduct quality. Match the review type and journal rather than assuming a universal SCI format.
