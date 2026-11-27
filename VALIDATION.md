@@ -80,3 +80,9 @@ Added targeted same-axis synthesis and concrete-conclusion checks to the existin
 - Five outputs were produced and inspected by the current host model in the same conversation. They retained the inspected facts, conditions and attribution. This is a synthetic self-assessment, not an independent or fresh-context language benchmark.
 - The private manuscript application retained actual competing candidates and edit reasons. Only independently written generic guidance and synthetic requests enter this public skill. Scores compare those concrete excerpts; they are not AI-detection rates or general quality estimates.
 - Fixed sentence-length quotas were not adopted. Relevant terminology, material failures, exact disclosure and necessary conditions remain protected. The new guidance also permits keeping an already clear paragraph unchanged.
+
+## Shared academic-language routing (2026-11-27)
+
+- Connected the writing entry and existing skill adapter to ClearWeave's shared academic protocol. English prose uses Draft before the first paragraph; existing prose uses the requested Polish/Cleanup scope. ReviewCraft retains review inclusion, synthesis and structure. One writer integrates expression guidance once; grammar-only edits and Chinese synchronization keep their original scope.
+- Local Python 3.12.14: `python3 -m unittest discover -s tests -v` passed all 16 existing tests, including metadata and internal-link checks; `python3 -m pip check` reported no broken requirements. The explicit synthetic checker returned `READY_FOR_AUTHOR_CONFIRMATION` for its two fixture files, with both detector results still unmeasured. `git diff --check` passed.
+- Runtime, schema, UI metadata, tests and fixtures remain unchanged. The existing Python 3.10/3.14 CI workflow is unchanged; its remote result is checked against the published commit separately. No claim is made here about native-client automatic selection, real-review writing quality or scientific validity.

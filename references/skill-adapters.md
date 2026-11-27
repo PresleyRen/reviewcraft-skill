@@ -23,7 +23,7 @@
 |---|---|---|
 | ScholarRoute / Agent Research Atlas | 阶段路由、最近邻/反证和决定导向阅读 → review-design / conduct-and-synthesis | 不建立第二套atlas/CLI。Atlas部分Supervisor参考和模板有CC BY-NC-SA许可，未复制 |
 | Paper Review Atlas | 作者侧挑战→保留/缩小/撤回→实际关闭 → review-and-submission | 不强制问题数量或模拟报告数量 |
-| ClearWeave | 数字角色、条件依赖、归属与确定性保存 → writing-and-bilingual | 不引入禁词表或检测分数承诺 |
+| ClearWeave | [统一学术语言接口](writing-and-bilingual.md#clearweave-学术语言接口)：起草前加载 Draft，已有稿按 Polish/Cleanup；数字角色、条件依赖、归属与确定性保存 → writing-and-bilingual | ReviewCraft 保持综合与结构责任；同一段只由一个写作者整合，不叠加多轮 Humanizer，不引入禁词表或检测分数承诺 |
 | FigureFoundry | 图要回答的问题、证据与解释分开、实际查看 → figures-and-artifacts | 编辑性/导出按用途，不把所有图强制为一种格式 |
 | nature-academic-search / nature-citation | 可用工具路由、分段论断支持、元数据导出 → search-and-evidence | 列出的工具须实际可用；不继承CNS-only/MeSH默认范围 |
 | nature-literature-pipeline | 多ID去重、读取深度/版本 → search-and-evidence | 不继承声望加权、top-k、cron或外发；日常发现不等于综述纳入 |
